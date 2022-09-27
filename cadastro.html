@@ -20,7 +20,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 15px;
             border-radius: 15px;
             width: 20%;
@@ -31,6 +31,49 @@
             text-align: center;
             background-color: #0d0d13;
             border-radius: 7px;
+        }
+        .inputbox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px; /*espaço entre as letras*/
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none; /*qualquer lugar que clicar, vai executar a ação do input*/
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{ /*focus = quando der o foco pro inputUser ele vai executar uma ação*/
+            top: -20px;
+            font-size: 12px;
+        }
+        #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px; /*deixa as bordas mais redondas*/
+            outline: none; /*retira as bordas externas*/
+            font-size: 15px;
+        }
+        #submit{
+            background-image: linear-gradient(to right rgb(39, 39, 39) rgb(255, 255, 255));
+            width: 100%;
+            border-radius: 14px;
+            border: none;
+            padding: 15px;
+            font-size: 15px;
+            cursor: pointer; /*Ao passar o cursor do mouse, apenas muda o ícone*/
+        }
+        #submit:hover{ /*hover faz cria umaação ao passar o mouse*/
+            background-image: linear-gradient(to right rgb(9, 9, 9) rgb(169, 169, 169));
         }
     </style>
 </head>
@@ -49,18 +92,18 @@
                 <legend><b>Cadastro</b></legend>
                 <div class="inputbox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome">Nome Completo</label>
+                    <label for="nome" class="labelInput">Nome Completo</label>
                 </div>
                 <br><br>
                 <div class="inputbox">
-                    <input type="email" name="email" id="email" class="inputUser" required>
-                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
                 </div>
                 <br><br>
                 <div class="inputbox">
                     <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-                    <label for="telefone">Telefone</label>
-                </div>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div><br><br>
                 <p>Gênero:</p>
                 <!--masculino-->
                 <input type="radio" id="masculino" name="genero" value="masculino" required>
@@ -73,16 +116,16 @@
                 <label for="outros">Outros</label><br><br>
                 <!--data de nascimento-->>
                 <label for="date"><b>Data de Nascimento:</b></label>
-                <input type="date" name="data_nascimento" id="data_nascimento" class="inputUser" required>
+                <input type="date" name="data_nascimento" id="data_nascimento" required><br><br>
                 
                 <div class="inputbox">
                     <input type="text" name="senha" id="senha" class="inputUser" required>
-                    <label for="nome">Senha</label>
+                    <label for="nome" class="labelInput">Senha</label>
                 </div>
-                <br><br>
+                <br>
                 <div class="inputbox">
                     <input type="number" name="cpf" id="cpf" class="inputUser" required>
-                    <label for="number">CPF</label><br><br>
+                    <label for="number" class="labelInput">CPF</label><br><br>
                     <input type="submit" name="submit" id="submit">
                 </div>
             </fieldset>
