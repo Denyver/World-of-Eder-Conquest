@@ -19,6 +19,9 @@ h1{
 img{
     object-fit: cover;
 }
+#ficha{
+    width: 75%;
+}
 
 .titulop{
     font-size: 90pt;
