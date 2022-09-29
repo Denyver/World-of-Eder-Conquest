@@ -19,6 +19,9 @@ h1{
 img{
     object-fit: cover;
 }
+.filterImg{
+    filter: grayscale(90%) blur(1px);
+}
 #ficha{
     width: 75%;
 }
