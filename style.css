@@ -19,6 +19,16 @@ h1{
 img{
     object-fit: cover;
 }
+.Guia{
+    justify-content: space-around;
+    display: flex;
+    font-size: 20%;
+    background-color: #15151e;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+}
 .filterImg{
     filter: grayscale(70%); /*blur(1px) filtro de imagem borrada*/
 }
