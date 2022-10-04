@@ -23,7 +23,7 @@
             background-color: rgba(0, 0, 0, 0.6);
             padding: 15px;
             border-radius: 15px;
-            width: 25%;
+            width: 20%;
         }
         legend{
             border: 1px solid white;
@@ -31,6 +31,12 @@
             text-align: center;
             background-color: #0d0d13;
             border-radius: 7px;
+        }
+        #conta{
+            position: fixed;
+            top: 68%;
+            left: 44%;
+            width: 200px;
         }
         .inputbox{
             position: relative;
@@ -88,41 +94,20 @@
         <form action="">
             <fieldset>
                 <legend><b>Login</b></legend>
+                <br>
                 <div class="inputbox">
                     <input type="text" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">Email</label>
-                </div>
-                <br><br>
-                <div class="inputbox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-                    <label for="telefone" class="labelInput">Telefone</label>
                 </div><br><br>
-                <p>Gênero:</p>
-                <!--masculino-->
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino">Masculino</label><br>
-                <!--feminino-->
-                <input type="radio" id="feminino" name="genero" value="feminino" required>
-                <label for="masculino">Feminino</label><br>
-                <!--outros-->
-                <input type="radio" id="outros" name="genero" value="outros" required>
-                <label for="outros">Outros</label><br><br>
-                <!--data de nascimento-->>
-                <label for="date"><b>Data de Nascimento:</b></label>
-                <input type="date" name="data_nascimento" id="data_nascimento" required><br><br><br>
-                
                 <div class="inputbox">
                     <input type="text" name="senha" id="senha" class="inputUser" required>
                     <label for="nome" class="labelInput">Senha</label><br>
                 </div>
                 <br>
-                <div class="inputbox">
-                    <input type="text" name="cpf" id="cpf" class="inputUser" required>
-                    <label for="text" class="labelInput">CPF</label><br><br>
-                    <input type="submit" name="submit" id="submit">
-                </div>
+                <input type= "submit" name="submit" id="submit">
             </fieldset>
         </form>
     </div>
+    <p id="conta">Se não possuir conta, faça o <a href="/cadastro.html"><i>Cadastro</i></p>
 </body>
 </html>
