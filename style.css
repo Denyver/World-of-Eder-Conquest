@@ -1,3 +1,8 @@
+:root{
+    --cor-fundo: #0d0d13;
+    --cor-hover: #725AC1;
+    --cor-primaria: #CAC4CE;
+}
 body, ul, li, p{
     margin: 0;
     padding: 0;
@@ -75,8 +80,16 @@ img{
         display: block;
         padding: 10px;
     }
+    .menu li a:hover{
+        padding: 10px;
+        background-color: var(--cor-hover);
+    }
+    .menu ul li:hover a{
+        display: block;
+    }
+    
 
-    /*CSS FLEXBOX*/
+    /*CSS FLEXBOX PERSONAGENS*/
 
     .container-personagens {
         display: flex;
