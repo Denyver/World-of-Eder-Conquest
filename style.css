@@ -79,6 +79,7 @@ img{
     }
     .menu li a:hover{
         background-color: var(--cor-hover);
+        transition: background .3s;
         border-radius: 5px;
     }
 
