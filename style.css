@@ -1,5 +1,5 @@
 :root{
-    --cor-fundo: #0d0d13;
+    --cor-fundo: #15151e;
     --cor-hover: #725AC1;
     --cor-primaria: #CAC4CE;
 }
@@ -72,23 +72,35 @@ img{
         font-family: Arial;
         text-decoration: none;
     }
-    .menu li{
-        margin-left: 20px;
-    }
-
+    
     .menu li a{
-        display: block;
-        padding: 10px;
+        margin-left: 20px;
+        padding: 20px;
     }
     .menu li a:hover{
-        padding: 10px;
         background-color: var(--cor-hover);
+        border-radius: 5px;
     }
-    .menu ul li:hover a{
+
+    .submenu{
+        display: none;
+    }
+
+    nav ul li:hover .submenu{
+        border-radius: 15px;
+        margin-top: 18px;
         display: block;
+        position: absolute;
+        background-color: var(--cor-fundo);
+        padding: 10px;
+        list-style-type: none;
+        margin-left: -25px;
+    }
+    .submenu ul li{
+        margin-bottom: 5px;
+        padding: 10px;
     }
     
-
     /*CSS FLEXBOX PERSONAGENS*/
 
     .container-personagens {
