@@ -2,6 +2,7 @@
     --cor-fundo: #15151e;
     --cor-hover: #725AC1;
     --cor-primaria: #CAC4CE;
+    --cor-teste: rgba(0, 0, 0, 0.579);
 }
 body, ul, li, p{
     margin: 0;
@@ -78,8 +79,8 @@ img{
         padding: 20px;
     }
     .menu li a:hover{
-        background-color: var(--cor-hover);
-        transition: background .3s;
+        background-color: var(--cor-teste);
+        transition: background .2s;
         border-radius: 5px;
     }
 
@@ -88,7 +89,6 @@ img{
     }
 
     nav ul li:hover .submenu{
-        border-radius: 15px;
         margin-top: 18px;
         display: block;
         position: absolute;
