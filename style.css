@@ -22,7 +22,7 @@ body, ul, li, p{
     list-style: none;
     height: 100%;
     display: flex;
-    animation: scrolling 10s linear infinite;
+    animation: scrolling 12s linear infinite;
 }
 @keyframes scrolling {
     0% { transform: translateX(0vw);}
