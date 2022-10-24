@@ -11,7 +11,7 @@ nav{
   justify-content: space-around;
   align-items:  center;
   min-height: 8vh;
-  background-color: rgb(26, 25, 25);
+  background-color: rgb(8, 0, 14);
   font-family: 'Dancing Script', cursive;
   z-index: 999;
   position: fixed;
@@ -32,27 +32,21 @@ nav{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 19px;
-    
-    
-    
-    
 }
+
 .link li a:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
-    
-    }
+}
 
 .link{
     display: flex;
     justify-content: space-around;
     width: 30%;
-   
 }
 
 .link li{
  list-style: none;
-
 }
 
 .link a{
@@ -62,18 +56,20 @@ nav{
     font-weight: bold;
     font-size: 14px;
     font-family: 'Dosis', sans-serif;
-
 }
+
 .pp{
     display: none;
     cursor: pointer;
 }
+
 .pp div{
  width: 25px;
  height: 5px;
  background-color: rgb(226 , 226, 226);
  margin: 3px;
 }
+
 @media screen and (max-width:1024px){
    .link{
        width: 60%;
