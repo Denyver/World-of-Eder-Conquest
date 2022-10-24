@@ -112,7 +112,7 @@ h1{
 }
 
 .filterImg{
-    filter: grayscale(70%); /*blur(1px) filtro de imagem borrada*/
+    filter: grayscale(1); /*blur(1px) filtro de imagem borrada*/
 }
 
 #ficha{

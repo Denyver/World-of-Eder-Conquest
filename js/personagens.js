@@ -10,8 +10,8 @@ function mouseMoving(event){//Function é um bloco de código
     imgatual.classList.add("activate");
 
     images.forEach(img => {
-        if(!img.classList.contains("activate")){
-            img.classList.add("filterImg");
+        if(img.classList.contains("activate")){
+            img.classList.remove("filterImg");
         }
     })
 }
@@ -21,6 +21,6 @@ function mouseOut(){
         if(img.classList.contains("activate")){
             img.classList.remove("activate");
         }
-        img.classList.remove("filterImg");
+        img.classList.add("filterImg");
     })
 }
