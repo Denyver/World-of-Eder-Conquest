@@ -200,6 +200,7 @@ nav ul li:hover .submenu{
 .zoom a img{
     width: 100%;
     gap: 50%;
+    border-radius: 10px;
 }
 
 .img-responsive{
