@@ -10,7 +10,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, #0d0d13, #2e2e2e)
+            background-color: rgb(6, 0, 6);
         }
         .title{
             color: white;
@@ -35,6 +35,7 @@
         }
         .inputbox{
             position: relative;
+            margin: 10px;
         }
         .inputUser{
             background: none;
@@ -72,6 +73,7 @@
             padding: 15px;
             font-size: 15px;
             cursor: pointer; /*Ao passar o cursor do mouse, apenas muda o ícone*/
+            margin-top: 18px;
         }
         #submit:hover{ /*hover faz cria umaação ao passar o mouse*/
             background-image: linear-gradient(to right rgb(9, 9, 9) rgb(169, 169, 169));
@@ -81,6 +83,9 @@
             top: 88%;
             left: 44%;
             width: 200px;
+        }
+        #fieldset{
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -94,7 +99,16 @@
         <ul class="link">
             <li>
                 <a href="#sobre">Sobre</a>
-            </li>
+                <div class="submenu">
+                  <ul>
+                      <li><a href="https://docs.google.com/document/d/1ZHHF4hJW40hIdPhNB0yEPHaHldC5wZdjFu2PAmpFnvQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Guia</a></li>
+                      <li><a href="https://docs.google.com/document/d/1a0I7-L21TVPY1-ShXy9alpNaDl0ZODuF4PqT5mt9T18/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Escolas</a></li>
+                      <li><a href="https://docs.google.com/document/d/1L0HjoPxsVHKKBU74ijdodaGBGUn8BDHpjoUENK2xs3U/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Treinamentos</a></li>
+                      <li><a href="https://docs.google.com/document/d/1uENF0Na5Fu3Z0BdgIlgcO9YXsbPGJrQ_CF8aOnuHqzg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Elementos</a></li>
+                      <li><a href="https://docs.google.com/document/d/1gNylurF9Q4ChG7SxAb1DToRbHNalUApZL8xSkBhTIlc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Relíquias</a></li>
+                  </ul>
+                  </div>
+              </li>
             <li>
                 <a href="/personagens.html">Personagens</a>
             </li>
@@ -115,7 +129,7 @@
 <script src="js/pj.js"></script>
     <div class="box">
         <form action="">
-            <fieldset>
+            <fieldset id="fieldset">
                 <legend><b>Cadastro</b></legend>
                 <div class="inputbox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
@@ -151,11 +165,11 @@
                 </div>
                 <br>
                 <div class="inputbox">
-                    <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                <input type="text" name="cpf" id="cpf" class="inputUser" required>
                     <label for="text" class="labelInput">CPF</label><br><br>
-                    <input type="submit" name="submit" id="submit">
                 </div>
             </fieldset>
+            <input type="submit" name="submit" id="submit">
         </form>
     </div>
     <p id="conta">Já tem uma conta? Faça o <a href="/login.html"><i>Login</i></a></p>
