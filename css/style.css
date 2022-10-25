@@ -1,5 +1,5 @@
 :root{
-    --cor-fundo: #15151e;
+    --cor-fundo: rgb(8, 0, 14);
     --cor-hover: #725AC1;
     --cor-primaria: #CAC4CE;
     --cor-teste: rgba(0, 0, 0, 0.579);
@@ -168,10 +168,9 @@ h1{
 }
 
 nav ul li:hover .submenu{
-    margin-top: 18px;
     display: block;
     position: absolute;
-    background-color: var(--cor-fundo);
+    background-color: rgb(8, 0, 14);
     padding: 10px;
     list-style-type: none;
     margin-left: -25px;
