@@ -203,9 +203,9 @@ nav ul li:hover .submenu{
 }
 
 .img-responsive{
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .img-responsive:hover{
