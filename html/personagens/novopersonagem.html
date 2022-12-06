@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/Estilo_do_menu.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(6, 0, 6);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .title{
+            color: white;
+        }
+        .box{
+            color: rgb(0, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(0, 0, 0);
+            padding: 15px;
+            border-radius: 20px;
+            width: 20%;
+        }
+        legend{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 7px;
+        }
+        #conta{
+            position: fixed;
+            top: 68%;
+            left: 44%;
+            width: 200px;
+        }
+        .inputbox{
+            position: relative;
+            margin: 10px;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px; /*espaço entre as letras*/
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none; /*qualquer lugar que clicar, vai executar a ação do input*/
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{ /*focus = quando der o foco pro inputUser ele vai executar uma ação*/
+            top: -20px;
+            font-size: 12px;
+        }
+        #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px; /*deixa as bordas mais redondas*/
+            outline: none; /*retira as bordas externas*/
+            font-size: 15px;
+        }
+        #submit{
+            background-image: linear-gradient(to right rgb(39, 39, 39) rgb(255, 255, 255));
+            width: 100%;
+            border-radius: 14px;
+            border: none;
+            padding: 15px;
+            font-size: 15px;
+            cursor: pointer; /*Ao passar o cursor do mouse, apenas muda o ícone*/
+            margin-top: 18px;
+        }
+        #submit:hover{ /*hover faz cria umaação ao passar o mouse*/
+            background-image: linear-gradient(to right rgb(9, 9, 9) rgb(169, 169, 169));
+        }
+        #fieldset{
+            border-radius: 10px;
+        }
+        #checkbox{
+            margin-left: 22%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="menu"></div>
+    <nav>
+      <div class="Estilo_do_menu">
+        <h4>
+            <a href="/html/index.html" rel="noopener noreferrer">
+              World of Eder: Conquest</a>
+          </h4>
+      </div>
+      <ul class="link">
+        <li>
+            <a href="#sobre">Sobre</a>
+            <div class="submenu">
+              <ul>
+                  <li><a href="https://docs.google.com/document/d/1ZHHF4hJW40hIdPhNB0yEPHaHldC5wZdjFu2PAmpFnvQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Guia</a></li>
+                  <li><a href="https://docs.google.com/document/d/1a0I7-L21TVPY1-ShXy9alpNaDl0ZODuF4PqT5mt9T18/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Escolas</a></li>
+                  <li><a href="https://docs.google.com/document/d/1L0HjoPxsVHKKBU74ijdodaGBGUn8BDHpjoUENK2xs3U/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Treinamentos</a></li>
+                  <li><a href="https://docs.google.com/document/d/1uENF0Na5Fu3Z0BdgIlgcO9YXsbPGJrQ_CF8aOnuHqzg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Elementos</a></li>
+                  <li><a href="https://docs.google.com/document/d/1gNylurF9Q4ChG7SxAb1DToRbHNalUApZL8xSkBhTIlc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Relíquias</a></li>
+              </ul>
+              </div>
+          </li>
+        <li>
+          <a href="/html/personagens.html">Personagens</a>
+        </li>
+        <li>
+          <a href="#contato">Contato</a>
+        </li>
+        <li>
+          <a href="/html/login.html">Entrar</a>
+        </li>
+      </ul>
+      <div class="pp">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+      </div>
+    </nav>
+    <script src="/js/pj.js"></script>
+
+    <div class="box">
+        <form action="">
+            <fieldset id="fieldset">
+                <legend><b>Novo Personagem</b></legend>
+                <br>
+                <a href="/pdf/FichaVazia.pdf" download>Baixar a Ficha</a>
+                <input type="file" accept=".pdf" required>
+                <input type="file" accept=".jpg,.png,jpeg" required>
+            </fieldset>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
